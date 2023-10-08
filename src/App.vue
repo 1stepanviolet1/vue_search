@@ -67,9 +67,12 @@ export default {
     },
 
     pop_word() {
-      const delete_word = prompt("Введите удаляемое слово: ").toLowerCase();
+      const delete_word = prompt("Введите удаляемое слово: ");
+
+      if (!delete_word)
+        return;
       
-      this.words = this.words.filter(el => el.toLowerCase() !== delete_word);
+      this.words = this.words.filter(el => el.toLowerCase() !== delete_word.toLowerCase());
 
     }
   }
