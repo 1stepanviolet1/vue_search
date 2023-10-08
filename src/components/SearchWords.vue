@@ -69,10 +69,14 @@ export default {
 
 <style>
 
-.search {
-  margin-top: 5em;
+input {
+  background-color: #333;
+  color: aliceblue;
 }
 
+.search {
+  margin-top: 3em;
+}
 
 .header {
   margin-bottom: 2em;
